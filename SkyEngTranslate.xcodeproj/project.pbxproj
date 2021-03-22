@@ -41,6 +41,15 @@
 		4FECF50E2608B03D0081F034 /* CALayerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FECF50D2608B03D0081F034 /* CALayerExtension.swift */; };
 		4FECF5132608B05F0081F034 /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FECF5122608B05F0081F034 /* UIButtonExtension.swift */; };
 		4FECF5182608B0810081F034 /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FECF5172608B0810081F034 /* PrimaryButton.swift */; };
+		4FECF51F2608B4170081F034 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FECF51E2608B4170081F034 /* NetworkError.swift */; };
+		4FECF5272608B4C10081F034 /* NetworkDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FECF5262608B4C10081F034 /* NetworkDataProvider.swift */; };
+		4FECF5342608B5200081F034 /* NetworkReachabilityChecking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FECF5332608B5200081F034 /* NetworkReachabilityChecking.swift */; };
+		4FECF5392608B59A0081F034 /* NetworkLoggerPluginConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FECF5382608B59A0081F034 /* NetworkLoggerPluginConfig.swift */; };
+		4FECF53E2608B6000081F034 /* Alamofire+NetworkReachabilityChecking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FECF53D2608B6000081F034 /* Alamofire+NetworkReachabilityChecking.swift */; };
+		4FECF5432608B6760081F034 /* APIResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FECF5422608B6760081F034 /* APIResult.swift */; };
+		4FECF5482608B6AB0081F034 /* JSONStandard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FECF5472608B6AB0081F034 /* JSONStandard.swift */; };
+		4FECF5532608B7890081F034 /* SearchTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FECF5522608B7890081F034 /* SearchTarget.swift */; };
+		4FECF55B2608B7BF0081F034 /* BaseTargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FECF55A2608B7BF0081F034 /* BaseTargetType.swift */; };
 		5BDFE7623D92390A42E3F050 /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C1A566466F24AB44C9B86DE /* MainPageViewController.swift */; };
 		6E084EB6F71C17D3C8219AEE /* MainPageModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0F677F6C52B2E512D06B44 /* MainPageModuleOutput.swift */; };
 		732EE00EBBACE27AD2EDEB10 /* MainPageViewProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDBC7E3F18A7E271212E071 /* MainPageViewProtocols.swift */; };
@@ -111,6 +120,15 @@
 		4FECF50D2608B03D0081F034 /* CALayerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CALayerExtension.swift; sourceTree = "<group>"; };
 		4FECF5122608B05F0081F034 /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
 		4FECF5172608B0810081F034 /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
+		4FECF51E2608B4170081F034 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		4FECF5262608B4C10081F034 /* NetworkDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDataProvider.swift; sourceTree = "<group>"; };
+		4FECF5332608B5200081F034 /* NetworkReachabilityChecking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkReachabilityChecking.swift; sourceTree = "<group>"; };
+		4FECF5382608B59A0081F034 /* NetworkLoggerPluginConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLoggerPluginConfig.swift; sourceTree = "<group>"; };
+		4FECF53D2608B6000081F034 /* Alamofire+NetworkReachabilityChecking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Alamofire+NetworkReachabilityChecking.swift"; sourceTree = "<group>"; };
+		4FECF5422608B6760081F034 /* APIResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResult.swift; sourceTree = "<group>"; };
+		4FECF5472608B6AB0081F034 /* JSONStandard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONStandard.swift; sourceTree = "<group>"; };
+		4FECF5522608B7890081F034 /* SearchTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTarget.swift; sourceTree = "<group>"; };
+		4FECF55A2608B7BF0081F034 /* BaseTargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTargetType.swift; sourceTree = "<group>"; };
 		7C1A566466F24AB44C9B86DE /* MainPageViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
 		7F2121FFB13936345A81A481 /* Pods_SkyEngTranslate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SkyEngTranslate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8129DC0DE0B7A56906BD202B /* Pods-SkyEngTranslate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkyEngTranslate.release.xcconfig"; path = "Target Support Files/Pods-SkyEngTranslate/Pods-SkyEngTranslate.release.xcconfig"; sourceTree = "<group>"; };
@@ -208,6 +226,7 @@
 		4FECF41626088B7A0081F034 /* SkyEngTranslate */ = {
 			isa = PBXGroup;
 			children = (
+				4FECF51C2608B4030081F034 /* Core */,
 				4FECF47326089D080081F034 /* Source */,
 				4FECF467260897FB0081F034 /* Modules */,
 				4FECF41726088B7A0081F034 /* AppDelegate.swift */,
@@ -347,6 +366,46 @@
 				4FECF5172608B0810081F034 /* PrimaryButton.swift */,
 			);
 			path = Buttons;
+			sourceTree = "<group>";
+		};
+		4FECF51C2608B4030081F034 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				4FECF55F2608B7F30081F034 /* Data */,
+				4FECF51D2608B40C0081F034 /* Network */,
+				4FECF5512608B77D0081F034 /* Targets */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		4FECF51D2608B40C0081F034 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				4FECF51E2608B4170081F034 /* NetworkError.swift */,
+				4FECF5262608B4C10081F034 /* NetworkDataProvider.swift */,
+				4FECF5332608B5200081F034 /* NetworkReachabilityChecking.swift */,
+				4FECF5382608B59A0081F034 /* NetworkLoggerPluginConfig.swift */,
+				4FECF53D2608B6000081F034 /* Alamofire+NetworkReachabilityChecking.swift */,
+				4FECF5422608B6760081F034 /* APIResult.swift */,
+				4FECF5472608B6AB0081F034 /* JSONStandard.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		4FECF5512608B77D0081F034 /* Targets */ = {
+			isa = PBXGroup;
+			children = (
+				4FECF5522608B7890081F034 /* SearchTarget.swift */,
+				4FECF55A2608B7BF0081F034 /* BaseTargetType.swift */,
+			);
+			path = Targets;
+			sourceTree = "<group>";
+		};
+		4FECF55F2608B7F30081F034 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 		82D9047C26F8BBACCED9CBD5 /* Frameworks */ = {
@@ -549,6 +608,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FECF53E2608B6000081F034 /* Alamofire+NetworkReachabilityChecking.swift in Sources */,
 				4FECF47626089D430081F034 /* SetupCoordinating.swift in Sources */,
 				4FECF5042608AFAB0081F034 /* UIActivityIndicatorViewExtension.swift in Sources */,
 				4FECF4AC2608A4520081F034 /* TextFieldView.swift in Sources */,
@@ -565,20 +625,28 @@
 				4FECF4D72608A9F60081F034 /* UIFontExtension.swift in Sources */,
 				4FECF4DF2608AA750081F034 /* UILabelExtension.swift in Sources */,
 				F2DA8EC0D2E4BC95F58C70D0 /* MainPageViewAdapter.swift in Sources */,
+				4FECF51F2608B4170081F034 /* NetworkError.swift in Sources */,
 				4FECF47E26089D6B0081F034 /* SetupCoordinator.swift in Sources */,
 				4FECF4C02608A5E50081F034 /* TextStyle.swift in Sources */,
+				4FECF55B2608B7BF0081F034 /* BaseTargetType.swift in Sources */,
 				4FECF5182608B0810081F034 /* PrimaryButton.swift in Sources */,
 				4FECF49826089FDB0081F034 /* ContainerExtension.swift in Sources */,
+				4FECF5272608B4C10081F034 /* NetworkDataProvider.swift in Sources */,
 				4FECF4E42608AADC0081F034 /* Color.swift in Sources */,
+				4FECF5482608B6AB0081F034 /* JSONStandard.swift in Sources */,
 				3210847354A8AF1EE251DA33 /* MainPageModuleInput.swift in Sources */,
 				6E084EB6F71C17D3C8219AEE /* MainPageModuleOutput.swift in Sources */,
 				4FECF4EE2608AE090081F034 /* KeyboardListening.swift in Sources */,
 				4FECF4FC2608AF700081F034 /* IndicatorProtocol.swift in Sources */,
 				4FECF49226089E490081F034 /* Inject.swift in Sources */,
+				4FECF5532608B7890081F034 /* SearchTarget.swift in Sources */,
 				4FECF4E92608AB0B0081F034 /* TextFieldViewOutput.swift in Sources */,
+				4FECF5342608B5200081F034 /* NetworkReachabilityChecking.swift in Sources */,
 				36FF6DEC8010A8FCCE4748A5 /* MainPageViewModel.swift in Sources */,
 				4FECF5092608B00D0081F034 /* UIImageExtension.swift in Sources */,
+				4FECF5432608B6760081F034 /* APIResult.swift in Sources */,
 				AA1DC34F87179172C0153DB6 /* MainPageRouterInput.swift in Sources */,
+				4FECF5392608B59A0081F034 /* NetworkLoggerPluginConfig.swift in Sources */,
 				4FECF4F42608AF4F0081F034 /* Button.swift in Sources */,
 				D8C6B59E5D14754B1EC331E0 /* MainPageRouter.swift in Sources */,
 				4FECF4C92608A86A0081F034 /* EditingAction.swift in Sources */,
