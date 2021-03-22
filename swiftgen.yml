@@ -1,0 +1,37 @@
+input_dir: SkyEngTranslate
+output_dir: SkyEngTranslate/Generated
+
+xcassets:
+    inputs:
+        Resources/Assets.xcassets
+    outputs:
+        # Bundled with SwiftGen template name
+        templateName: swift5
+        output: Assets.swift
+
+colors:
+    inputs: Resources/Colors.json
+    outputs:
+        # Custom template relative path
+        templatePath: SwiftGenTemplates/ColorLiterals.stencil
+        output: Color.swift
+        params:
+            enumName: Color
+            publicAccess: public
+
+plist:
+-   inputs: Configurations/CommonConfiguration.plist
+    outputs:
+        templateName: runtime-swift5
+        output: CommonConfigs.swift
+        params: 
+            enumName: CommonConfigs
+            publicAccess: public
+
+-   inputs: Configurations/Development/EnvConfiguration.plist
+    outputs:
+        templateName: runtime-swift5
+        output: EnvConfigs.swift
+        params: 
+            enumName: EnvConfigs
+            publicAccess: public
