@@ -48,6 +48,7 @@ class LogoTableViewCell: UITableViewCell {
             logoImageView.image = Asset.defaultLogo.image
         }
         titleLabel.setAttributedText(to: adapter.title)
+        separatorView.isHidden = adapter.isLast
     }
     
     // MARK: - Private methods

@@ -59,7 +59,9 @@ class MainPageViewModel: MainPageViewOutput {
     
     private func buildSectionModels(with words: [Word]) -> [WordsSectionModel] {
         words.map { word -> WordsSectionModel in
-            let adapters = word.meanings.map { WordsCellAdapter.makeFor(word: $0) }
+            let adapters = word.meanings.enumerated().map { (index, item) in
+                WordsCellAdapter.makeFor(word: item, isLast: (word.meanings.count - 1) == index)
+            }
             return WordsSectionModel(title: word.text,
                                      items: adapters,
                                      onSelection: {_ in})

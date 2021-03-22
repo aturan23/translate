@@ -14,6 +14,7 @@ protocol LogoCellAdapter {
     var subtitle: String? { get }
     var attributedSubtitle: NSAttributedString? { get }
     var imageUrl: URL? { get }
+    var isLast: Bool { get }
 }
 
 extension LogoCellAdapter {
