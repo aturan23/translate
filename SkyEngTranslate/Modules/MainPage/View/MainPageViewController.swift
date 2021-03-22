@@ -22,12 +22,28 @@ class MainPageViewController: BaseViewController, MainPageViewInput {
 
     var output: MainPageViewOutput?
     private var searchBtnBottomConstraint: Constraint?
+    private lazy var tableViewManager = LogoTableViewManager<
+        WordsCellAdapter,
+        WordsSectionModel>(tableView: tableView)
 
     // ------------------------------
     // MARK: - UI components
     // ------------------------------
 
     private let textField = TextFieldView(title: "Слово", editingActions: [.paste, .copy])
+    private lazy var tableView: UITableView = {
+        let tableView = UITableView(frame: .zero, style: .grouped)
+        tableView.estimatedRowHeight = Constants.tableViewEstimatedRowHeight
+        tableView.separatorStyle = .none
+        let emptyView = UIView(frame: CGRect.zero)
+        tableView.tableHeaderView = emptyView
+        tableView.tableFooterView = emptyView
+        tableView.showsVerticalScrollIndicator = false
+        tableView.backgroundColor = .clear
+        tableView.estimatedSectionFooterHeight = CGFloat.leastNormalMagnitude
+        tableView.keyboardDismissMode = .onDrag
+        return tableView
+    }()
     private lazy var searchButton: Button = {
         let button = Button.makePrimary(with: "Поиск")
         button.touchUpInside = { [weak self] in
@@ -50,7 +66,10 @@ class MainPageViewController: BaseViewController, MainPageViewInput {
     // MARK: - MainPageViewInput
     // ------------------------------
 
-    func display(viewAdapter: MainPageViewAdapter) { }
+    func display(viewAdapter: MainPageViewAdapter) {
+        tableViewManager.display(sections: viewAdapter.sectionModels)
+        tableView.reloadData()
+    }
     
     func showInputError(message: String) {
         textField.showError(message: message)
@@ -76,13 +95,18 @@ class MainPageViewController: BaseViewController, MainPageViewInput {
     }
 
     private func setupViewsHierarchy() {
-        [textField, searchButton].forEach(view.addSubview(_:))
+        [textField, tableView, searchButton].forEach(view.addSubview(_:))
     }
 
     private func setupConstraints() {
         textField.snp.makeConstraints {
             $0.top.equalTo(view.safeAreaLayoutGuide).offset(LayoutGuidance.offsetThreeQuarters * 2)
             $0.left.right.equalToSuperview().inset(LayoutGuidance.offset)
+        }
+        tableView.snp.makeConstraints {
+            $0.top.equalTo(textField.snp.bottom).offset(LayoutGuidance.offsetLarge)
+            $0.width.equalToSuperview()
+            $0.bottom.equalToSuperview()
         }
         searchButton.snp.makeConstraints {
             $0.left.right.equalToSuperview().inset(LayoutGuidance.offset)
