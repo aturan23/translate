@@ -36,7 +36,6 @@ class MainPageViewController: BaseViewController, MainPageViewInput {
         tableView.estimatedRowHeight = Constants.tableViewEstimatedRowHeight
         tableView.separatorStyle = .none
         let emptyView = UIView(frame: CGRect.zero)
-        tableView.tableHeaderView = emptyView
         tableView.tableFooterView = emptyView
         tableView.showsVerticalScrollIndicator = false
         tableView.backgroundColor = .clear
@@ -104,7 +103,7 @@ class MainPageViewController: BaseViewController, MainPageViewInput {
             $0.left.right.equalToSuperview().inset(LayoutGuidance.offset)
         }
         tableView.snp.makeConstraints {
-            $0.top.equalTo(textField.snp.bottom).offset(LayoutGuidance.offsetLarge)
+            $0.top.equalTo(textField.snp.bottom)
             $0.width.equalToSuperview()
             $0.bottom.equalToSuperview()
         }
