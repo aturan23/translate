@@ -7,20 +7,34 @@
 //
 
 import UIKit
+import SnapKit
 
 class MainPageViewController: BaseViewController, MainPageViewInput {
 
+    enum Constants {
+        static let tableViewEstimatedRowHeight: CGFloat = 72
+        static let continueButtonHiddenInset: CGFloat = -100
+    }
+    
     // ------------------------------
     // MARK: - Properties
     // ------------------------------
 
     var output: MainPageViewOutput?
+    private var searchBtnBottomConstraint: Constraint?
 
     // ------------------------------
     // MARK: - UI components
     // ------------------------------
 
     private let textField = TextFieldView(title: "Слово", editingActions: [.paste, .copy])
+    private lazy var searchButton: Button = {
+        let button = Button.makePrimary(with: "Поиск")
+        button.touchUpInside = { [weak self] in
+//            self?.output?.didTapContinueButton()
+        }
+        return button
+    }()
     
     // ------------------------------
     // MARK: - Life cycle
@@ -50,7 +64,7 @@ class MainPageViewController: BaseViewController, MainPageViewInput {
     }
 
     private func setupViewsHierarchy() {
-        [textField].forEach(view.addSubview(_:))
+        [textField, searchButton].forEach(view.addSubview(_:))
     }
 
     private func setupConstraints() {
@@ -58,6 +72,22 @@ class MainPageViewController: BaseViewController, MainPageViewInput {
             $0.top.equalTo(view.safeAreaLayoutGuide).offset(LayoutGuidance.offsetThreeQuarters * 2)
             $0.left.right.equalToSuperview().inset(LayoutGuidance.offset)
         }
+        searchButton.snp.makeConstraints {
+            $0.left.right.equalToSuperview().inset(LayoutGuidance.offset)
+            searchBtnBottomConstraint = $0.bottom.equalToSuperview()
+                .inset(Constants.continueButtonHiddenInset).constraint
+        }
+    }
+    
+    private func moveButton(bottomInset: CGFloat) {
+        let animations = { [weak self] in
+            self?.searchBtnBottomConstraint?.update(inset: bottomInset)
+            self?.view.layoutIfNeeded()
+        }
+        let animator = UIViewPropertyAnimator(duration: 0.5, dampingRatio: 0.9, animations: {
+            animations()
+        })
+        animator.startAnimation()
     }
 }
 
@@ -68,10 +98,17 @@ class MainPageViewController: BaseViewController, MainPageViewInput {
 extension MainPageViewController: KeyboardListening {
     
     func keyboardWillShow(notification: NSNotification) {
-        
+        guard let info = notification.userInfo,
+            let keyboardFrame: NSValue = info[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue
+            else { return }
+        let keyboardRectangle = keyboardFrame.cgRectValue
+        let keyboardHeight = keyboardRectangle.height
+        if textField.isFirstResponder {
+            moveButton(bottomInset: LayoutGuidance.offsetHalf + keyboardHeight)
+        }
     }
     
     func keyboardWillHide(notification: NSNotification) {
-        
+        moveButton(bottomInset: Constants.continueButtonHiddenInset)
     }
 }
