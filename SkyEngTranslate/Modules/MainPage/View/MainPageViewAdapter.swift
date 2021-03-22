@@ -7,4 +7,6 @@
 //
 
 /// Default ViewModel passed to View layer for displaying
-struct MainPageViewAdapter { }
+struct MainPageViewAdapter {
+    let sectionModels: [WordsSectionModel]
+}
