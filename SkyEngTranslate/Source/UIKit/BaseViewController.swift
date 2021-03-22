@@ -17,4 +17,27 @@ class BaseViewController: UIViewController {
     var safeAreaBottomInset: CGFloat {
         return UIApplication.shared.windows.filter {$0.isKeyWindow}.first?.safeAreaInsets.bottom ?? 0
     }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        addKeyboardObserverIfNeeded()
+    }
+    
+    private func addKeyboardObserverIfNeeded() {
+        guard let listening = self as? KeyboardListening else {
+            return
+        }
+        NotificationCenter.default.addObserver(
+            self,
+            selector: #selector(listening.keyboardWillShow),
+            name: UIResponder.keyboardWillShowNotification,
+            object: nil
+        )
+        NotificationCenter.default.addObserver(
+            self,
+            selector: #selector(listening.keyboardWillHide),
+            name: UIResponder.keyboardWillHideNotification,
+            object: nil
+        )
+    }
 }
