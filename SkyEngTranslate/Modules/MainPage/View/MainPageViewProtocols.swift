@@ -12,4 +12,5 @@ protocol MainPageViewInput: class {
 
 protocol MainPageViewOutput {
     func didLoad()
+    func didTapSearchButton()
 }

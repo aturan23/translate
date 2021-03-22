@@ -31,7 +31,7 @@ class MainPageViewController: BaseViewController, MainPageViewInput {
     private lazy var searchButton: Button = {
         let button = Button.makePrimary(with: "Поиск")
         button.touchUpInside = { [weak self] in
-//            self?.output?.didTapContinueButton()
+            self?.output?.didTapSearchButton()
         }
         return button
     }()

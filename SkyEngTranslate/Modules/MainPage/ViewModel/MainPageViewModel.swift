@@ -23,6 +23,10 @@ class MainPageViewModel: MainPageViewOutput {
     func didLoad() {
         view?.display(viewAdapter: MainPageViewAdapter())
     }
+    
+    func didTapSearchButton() {
+        
+    }
 
     // ------------------------------
     // MARK: - Private methods
