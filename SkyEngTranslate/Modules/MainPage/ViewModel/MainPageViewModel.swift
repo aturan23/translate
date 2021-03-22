@@ -15,6 +15,7 @@ class MainPageViewModel: MainPageViewOutput {
     weak var view: MainPageViewInput?
     var router: MainPageRouterInput?
     weak var moduleOutput: MainPageModuleOutput?
+    var searchService: SearchServiceProtocol?
 
     // ------------------------------
     // MARK: - MainPageViewOutput methods
@@ -25,13 +26,28 @@ class MainPageViewModel: MainPageViewOutput {
     }
     
     func didTapSearchButton() {
-        
+        view?.endEditing()
+        guard let text = view?.getFieldText(), !text.isEmpty else {
+            view?.showInputError(message: "Недостаточно символов")
+            return
+        }
+        getWords(from: text)
     }
 
     // ------------------------------
     // MARK: - Private methods
     // ------------------------------
     
+    private func getWords(from text: String) {
+        searchService?.getWords(text: text, completion: { (result) in
+            switch result {
+            case .success(let response):
+                print(response)
+            case .failure(let error):
+                print(error.message)
+            }
+        })
+    }
 }
 
 // ------------------------------

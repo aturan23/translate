@@ -8,6 +8,9 @@
 
 protocol MainPageViewInput: class {
     func display(viewAdapter: MainPageViewAdapter)
+    func getFieldText() -> String
+    func showInputError(message: String)
+    func endEditing()
 }
 
 protocol MainPageViewOutput {

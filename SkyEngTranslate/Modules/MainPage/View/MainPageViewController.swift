@@ -51,6 +51,18 @@ class MainPageViewController: BaseViewController, MainPageViewInput {
     // ------------------------------
 
     func display(viewAdapter: MainPageViewAdapter) { }
+    
+    func showInputError(message: String) {
+        textField.showError(message: message)
+    }
+    
+    func endEditing() {
+        view.endEditing(true)
+    }
+    
+    func getFieldText() -> String {
+        textField.getText()
+    }
 
     // ------------------------------
     // MARK: - Private methods
