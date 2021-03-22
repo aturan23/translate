@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -85,7 +85,6 @@
 				F7E805A282F53CE24314643D /* Pods-SkyEngTranslate.debug.xcconfig */,
 				8129DC0DE0B7A56906BD202B /* Pods-SkyEngTranslate.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -114,6 +113,7 @@
 		4FECF41626088B7A0081F034 /* SkyEngTranslate */ = {
 			isa = PBXGroup;
 			children = (
+				4FECF467260897FB0081F034 /* Modules */,
 				4FECF41726088B7A0081F034 /* AppDelegate.swift */,
 				4FECF41926088B7A0081F034 /* SceneDelegate.swift */,
 				4FECF41B26088B7A0081F034 /* ViewController.swift */,
@@ -140,6 +140,13 @@
 				4FECF43B26088B7D0081F034 /* Info.plist */,
 			);
 			path = SkyEngTranslateUITests;
+			sourceTree = "<group>";
+		};
+		4FECF467260897FB0081F034 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modules;
 			sourceTree = "<group>";
 		};
 		82D9047C26F8BBACCED9CBD5 /* Frameworks */ = {
