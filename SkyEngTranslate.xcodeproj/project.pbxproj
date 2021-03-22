@@ -60,6 +60,16 @@
 		4FECF5DC2608D0C80081F034 /* Colors.json in Resources */ = {isa = PBXBuildFile; fileRef = 4FECF5962608C7FC0081F034 /* Colors.json */; };
 		4FECF5E12608D1200081F034 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FECF5E02608D1200081F034 /* Color.swift */; };
 		4FECF5EA2608D4100081F034 /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FECF5E92608D4100081F034 /* Word.swift */; };
+		4FECF5F22608D8F40081F034 /* LogoTableViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FECF5F12608D8F40081F034 /* LogoTableViewManager.swift */; };
+		4FECF5F82608D92F0081F034 /* LogoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FECF5F72608D92F0081F034 /* LogoTableViewCell.swift */; };
+		4FECF6002608D9A20081F034 /* LogoCellAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FECF5FF2608D9A20081F034 /* LogoCellAdapter.swift */; };
+		4FECF6162608DA540081F034 /* LogoImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FECF6152608DA540081F034 /* LogoImageView.swift */; };
+		4FECF6272608DADA0081F034 /* TableViewSectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FECF6262608DADA0081F034 /* TableViewSectionModel.swift */; };
+		4FECF62C2608DB180081F034 /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FECF62B2608DB180081F034 /* ReusableView.swift */; };
+		4FECF6312608DB340081F034 /* LogoTableSectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FECF6302608DB340081F034 /* LogoTableSectionHeaderView.swift */; };
+		4FECF6362608DB6F0081F034 /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FECF6352608DB6F0081F034 /* UIImageViewExtension.swift */; };
+		4FECF63F2608DBAD0081F034 /* SeparatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FECF63E2608DBAD0081F034 /* SeparatorView.swift */; };
+		4FECF6472608DC520081F034 /* WordsCellAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FECF6462608DC520081F034 /* WordsCellAdapter.swift */; };
 		5BDFE7623D92390A42E3F050 /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C1A566466F24AB44C9B86DE /* MainPageViewController.swift */; };
 		6E084EB6F71C17D3C8219AEE /* MainPageModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0F677F6C52B2E512D06B44 /* MainPageModuleOutput.swift */; };
 		732EE00EBBACE27AD2EDEB10 /* MainPageViewProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDBC7E3F18A7E271212E071 /* MainPageViewProtocols.swift */; };
@@ -149,6 +159,16 @@
 		4FECF5AA2608CF6E0081F034 /* EnvConfigs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnvConfigs.swift; sourceTree = "<group>"; };
 		4FECF5E02608D1200081F034 /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		4FECF5E92608D4100081F034 /* Word.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
+		4FECF5F12608D8F40081F034 /* LogoTableViewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoTableViewManager.swift; sourceTree = "<group>"; };
+		4FECF5F72608D92F0081F034 /* LogoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoTableViewCell.swift; sourceTree = "<group>"; };
+		4FECF5FF2608D9A20081F034 /* LogoCellAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoCellAdapter.swift; sourceTree = "<group>"; };
+		4FECF6152608DA540081F034 /* LogoImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoImageView.swift; sourceTree = "<group>"; };
+		4FECF6262608DADA0081F034 /* TableViewSectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewSectionModel.swift; sourceTree = "<group>"; };
+		4FECF62B2608DB180081F034 /* ReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
+		4FECF6302608DB340081F034 /* LogoTableSectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoTableSectionHeaderView.swift; sourceTree = "<group>"; };
+		4FECF6352608DB6F0081F034 /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
+		4FECF63E2608DBAD0081F034 /* SeparatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeparatorView.swift; sourceTree = "<group>"; };
+		4FECF6462608DC520081F034 /* WordsCellAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsCellAdapter.swift; sourceTree = "<group>"; };
 		7C1A566466F24AB44C9B86DE /* MainPageViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
 		7F2121FFB13936345A81A481 /* Pods_SkyEngTranslate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SkyEngTranslate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8129DC0DE0B7A56906BD202B /* Pods-SkyEngTranslate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkyEngTranslate.release.xcconfig"; path = "Target Support Files/Pods-SkyEngTranslate/Pods-SkyEngTranslate.release.xcconfig"; sourceTree = "<group>"; };
@@ -210,6 +230,7 @@
 				3FDBC7E3F18A7E271212E071 /* MainPageViewProtocols.swift */,
 				7C1A566466F24AB44C9B86DE /* MainPageViewController.swift */,
 				38DB428C9D3E23694776F6CE /* MainPageViewAdapter.swift */,
+				4FECF6462608DC520081F034 /* WordsCellAdapter.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -328,6 +349,8 @@
 		4FECF49F2608A00F0081F034 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				4FECF63D2608DBA60081F034 /* Views */,
+				4FECF6142608DA4E0081F034 /* ImageViews */,
 				4FECF4D52608A9EC0081F034 /* Extensions */,
 				4FECF4C72608A8650081F034 /* Common */,
 				4FECF4F22608AF470081F034 /* Buttons */,
@@ -361,9 +384,14 @@
 		4FECF4C72608A8650081F034 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				4FECF5F62608D9290081F034 /* LogoCell */,
 				4FECF4C82608A86A0081F034 /* EditingAction.swift */,
 				4FECF4FB2608AF700081F034 /* IndicatorProtocol.swift */,
 				4FECF4BF2608A5E50081F034 /* TextStyle.swift */,
+				4FECF5F12608D8F40081F034 /* LogoTableViewManager.swift */,
+				4FECF6262608DADA0081F034 /* TableViewSectionModel.swift */,
+				4FECF62B2608DB180081F034 /* ReusableView.swift */,
+				4FECF6302608DB340081F034 /* LogoTableSectionHeaderView.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -371,6 +399,7 @@
 		4FECF4D52608A9EC0081F034 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				4FECF6352608DB6F0081F034 /* UIImageViewExtension.swift */,
 				4FECF4D62608A9F60081F034 /* UIFontExtension.swift */,
 				4FECF4DE2608AA750081F034 /* UILabelExtension.swift */,
 				4FECF5032608AFAB0081F034 /* UIActivityIndicatorViewExtension.swift */,
@@ -484,6 +513,31 @@
 				4FECF5E92608D4100081F034 /* Word.swift */,
 			);
 			path = Entity;
+			sourceTree = "<group>";
+		};
+		4FECF5F62608D9290081F034 /* LogoCell */ = {
+			isa = PBXGroup;
+			children = (
+				4FECF5F72608D92F0081F034 /* LogoTableViewCell.swift */,
+				4FECF5FF2608D9A20081F034 /* LogoCellAdapter.swift */,
+			);
+			path = LogoCell;
+			sourceTree = "<group>";
+		};
+		4FECF6142608DA4E0081F034 /* ImageViews */ = {
+			isa = PBXGroup;
+			children = (
+				4FECF6152608DA540081F034 /* LogoImageView.swift */,
+			);
+			path = ImageViews;
+			sourceTree = "<group>";
+		};
+		4FECF63D2608DBA60081F034 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4FECF63E2608DBAD0081F034 /* SeparatorView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		82D9047C26F8BBACCED9CBD5 /* Frameworks */ = {
@@ -712,6 +766,8 @@
 				4FECF47626089D430081F034 /* SetupCoordinating.swift in Sources */,
 				4FECF5042608AFAB0081F034 /* UIActivityIndicatorViewExtension.swift in Sources */,
 				4FECF4AC2608A4520081F034 /* TextFieldView.swift in Sources */,
+				4FECF6002608D9A20081F034 /* LogoCellAdapter.swift in Sources */,
+				4FECF5F22608D8F40081F034 /* LogoTableViewManager.swift in Sources */,
 				4FECF41826088B7A0081F034 /* AppDelegate.swift in Sources */,
 				4FECF4B82608A5AB0081F034 /* LabelFactory.swift in Sources */,
 				4FECF41A26088B7A0081F034 /* SceneDelegate.swift in Sources */,
@@ -724,6 +780,7 @@
 				5BDFE7623D92390A42E3F050 /* MainPageViewController.swift in Sources */,
 				4FECF4D72608A9F60081F034 /* UIFontExtension.swift in Sources */,
 				4FECF4DF2608AA750081F034 /* UILabelExtension.swift in Sources */,
+				4FECF6162608DA540081F034 /* LogoImageView.swift in Sources */,
 				4FECF5E12608D1200081F034 /* Color.swift in Sources */,
 				F2DA8EC0D2E4BC95F58C70D0 /* MainPageViewAdapter.swift in Sources */,
 				4FECF5D42608D0C20081F034 /* CommonConfigs.swift in Sources */,
@@ -731,9 +788,12 @@
 				4FECF51F2608B4170081F034 /* NetworkError.swift in Sources */,
 				4FECF47E26089D6B0081F034 /* SetupCoordinator.swift in Sources */,
 				4FECF4C02608A5E50081F034 /* TextStyle.swift in Sources */,
+				4FECF6312608DB340081F034 /* LogoTableSectionHeaderView.swift in Sources */,
 				4FECF55B2608B7BF0081F034 /* BaseTargetType.swift in Sources */,
 				4FECF5D82608D0C50081F034 /* Assets.swift in Sources */,
+				4FECF5F82608D92F0081F034 /* LogoTableViewCell.swift in Sources */,
 				4FECF5182608B0810081F034 /* PrimaryButton.swift in Sources */,
+				4FECF6362608DB6F0081F034 /* UIImageViewExtension.swift in Sources */,
 				4FECF49826089FDB0081F034 /* ContainerExtension.swift in Sources */,
 				4FECF5272608B4C10081F034 /* NetworkDataProvider.swift in Sources */,
 				4FECF4E42608AADC0081F034 /* (null) in Sources */,
@@ -742,6 +802,7 @@
 				3210847354A8AF1EE251DA33 /* MainPageModuleInput.swift in Sources */,
 				6E084EB6F71C17D3C8219AEE /* MainPageModuleOutput.swift in Sources */,
 				4FECF4EE2608AE090081F034 /* KeyboardListening.swift in Sources */,
+				4FECF63F2608DBAD0081F034 /* SeparatorView.swift in Sources */,
 				4FECF4FC2608AF700081F034 /* IndicatorProtocol.swift in Sources */,
 				4FECF49226089E490081F034 /* Inject.swift in Sources */,
 				4FECF5532608B7890081F034 /* SearchTarget.swift in Sources */,
@@ -749,10 +810,13 @@
 				4FECF5342608B5200081F034 /* NetworkReachabilityChecking.swift in Sources */,
 				36FF6DEC8010A8FCCE4748A5 /* MainPageViewModel.swift in Sources */,
 				4FECF5092608B00D0081F034 /* UIImageExtension.swift in Sources */,
+				4FECF6272608DADA0081F034 /* TableViewSectionModel.swift in Sources */,
+				4FECF6472608DC520081F034 /* WordsCellAdapter.swift in Sources */,
 				4FECF5432608B6760081F034 /* APIResult.swift in Sources */,
 				AA1DC34F87179172C0153DB6 /* MainPageRouterInput.swift in Sources */,
 				4FECF5392608B59A0081F034 /* NetworkLoggerPluginConfig.swift in Sources */,
 				4FECF4F42608AF4F0081F034 /* Button.swift in Sources */,
+				4FECF62C2608DB180081F034 /* ReusableView.swift in Sources */,
 				4FECF5D02608D0C00081F034 /* EnvConfigs.swift in Sources */,
 				D8C6B59E5D14754B1EC331E0 /* MainPageRouter.swift in Sources */,
 				4FECF4C92608A86A0081F034 /* EditingAction.swift in Sources */,
