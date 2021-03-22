@@ -4,5 +4,6 @@ target 'SkyEngTranslate' do
   use_frameworks!
 
   pod 'SnapKit', '~> 5.0.0'
+  pod 'Swinject'
 
 end
