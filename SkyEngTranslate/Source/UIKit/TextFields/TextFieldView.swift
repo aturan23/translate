@@ -369,7 +369,7 @@ extension TextFieldView {
             self?.textField.clear()
             self?.textField.becomeFirstResponder()
         }
-        rightIconButton.setImage(UIImage(named: "icon_clear_textfield"), for: .normal)
+        rightIconButton.setImage(Asset.iconClearTextfield.image, for: .normal)
         rightViewMode = .whileEditing
         return self
     }
