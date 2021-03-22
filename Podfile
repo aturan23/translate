@@ -5,5 +5,6 @@ target 'SkyEngTranslate' do
 
   pod 'SnapKit', '~> 5.0.0'
   pod 'Swinject'
+  pod 'Moya', '~> 14.0'
 
 end
