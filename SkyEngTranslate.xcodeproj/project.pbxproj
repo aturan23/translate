@@ -59,6 +59,7 @@
 		4FECF5D82608D0C50081F034 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FECF5A82608CF6E0081F034 /* Assets.swift */; };
 		4FECF5DC2608D0C80081F034 /* Colors.json in Resources */ = {isa = PBXBuildFile; fileRef = 4FECF5962608C7FC0081F034 /* Colors.json */; };
 		4FECF5E12608D1200081F034 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FECF5E02608D1200081F034 /* Color.swift */; };
+		4FECF5EA2608D4100081F034 /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FECF5E92608D4100081F034 /* Word.swift */; };
 		5BDFE7623D92390A42E3F050 /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C1A566466F24AB44C9B86DE /* MainPageViewController.swift */; };
 		6E084EB6F71C17D3C8219AEE /* MainPageModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0F677F6C52B2E512D06B44 /* MainPageModuleOutput.swift */; };
 		732EE00EBBACE27AD2EDEB10 /* MainPageViewProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDBC7E3F18A7E271212E071 /* MainPageViewProtocols.swift */; };
@@ -147,6 +148,7 @@
 		4FECF5A92608CF6E0081F034 /* CommonConfigs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonConfigs.swift; sourceTree = "<group>"; };
 		4FECF5AA2608CF6E0081F034 /* EnvConfigs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnvConfigs.swift; sourceTree = "<group>"; };
 		4FECF5E02608D1200081F034 /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		4FECF5E92608D4100081F034 /* Word.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
 		7C1A566466F24AB44C9B86DE /* MainPageViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
 		7F2121FFB13936345A81A481 /* Pods_SkyEngTranslate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SkyEngTranslate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8129DC0DE0B7A56906BD202B /* Pods-SkyEngTranslate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkyEngTranslate.release.xcconfig"; path = "Target Support Files/Pods-SkyEngTranslate/Pods-SkyEngTranslate.release.xcconfig"; sourceTree = "<group>"; };
@@ -184,6 +186,7 @@
 		15DFB73BA7CE64C685595AAA /* MainPage */ = {
 			isa = PBXGroup;
 			children = (
+				4FECF5E82608D3FA0081F034 /* Entity */,
 				1EBA0AD9E98052A6302AF440 /* View */,
 				88E902C13843E1149A8E38C8 /* ViewModel */,
 				BF87C27F6E3449EA0315E57E /* Router */,
@@ -475,6 +478,14 @@
 			path = Generated;
 			sourceTree = "<group>";
 		};
+		4FECF5E82608D3FA0081F034 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				4FECF5E92608D4100081F034 /* Word.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
 		82D9047C26F8BBACCED9CBD5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -716,6 +727,7 @@
 				4FECF5E12608D1200081F034 /* Color.swift in Sources */,
 				F2DA8EC0D2E4BC95F58C70D0 /* MainPageViewAdapter.swift in Sources */,
 				4FECF5D42608D0C20081F034 /* CommonConfigs.swift in Sources */,
+				4FECF5EA2608D4100081F034 /* Word.swift in Sources */,
 				4FECF51F2608B4170081F034 /* NetworkError.swift in Sources */,
 				4FECF47E26089D6B0081F034 /* SetupCoordinator.swift in Sources */,
 				4FECF4C02608A5E50081F034 /* TextStyle.swift in Sources */,
