@@ -12,10 +12,20 @@ enum SearchTarget {
 }
 
 extension SearchTarget: BaseTargetType {
+    
+    var path: String {
+        switch self {
+        case .search:
+            return "words/search"
+        }
+    }
+    
     var task: Task {
         switch self {
         case .search(let text):
-            return .requestParameters(parameters: ["search": "apple"], encoding: URLEncoding.default)
+            return .requestParameters(
+                parameters: ["search": text],
+                encoding: URLEncoding.default)
         }
     }
 }

@@ -15,6 +15,7 @@ enum Inject {
         let container = Container()
         return container
             .registerNetworking()
+            .registerServices()
             .registerModules()
             .registerCoordinators()
     }
@@ -44,6 +45,19 @@ extension Container {
     }
     
     func registerServices() -> Self {
+        
+        func resolveDefaultPlugins(resolver: Resolver) -> [PluginType] {
+            let optionalPlugins: [PluginType?] = [
+                resolver.resolve(NetworkLoggerPlugin.self)]
+            return optionalPlugins.compactMap { $0 }
+        }
+        
+        register(SearchServiceProtocol.self) { (res: Resolver) in
+            let generalProvider = NetworkDataProvider<SearchTarget>(
+                networkReachibilityChecker: res.resolve(NetworkReachabilityChecking.self),
+                plugins: resolveDefaultPlugins(resolver: res))
+            return SearchService(dataProvider: generalProvider)
+        }
         return self
     }
     

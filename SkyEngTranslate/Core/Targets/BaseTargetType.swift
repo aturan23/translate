@@ -12,11 +12,11 @@ protocol BaseTargetType: TargetType {}
 extension BaseTargetType {
     
     public var baseURL: URL {
-        return URL(string: "https://dictionary.skyeng.ru")!
+        return URL(string: "\(EnvConfigs.baseUrl)")!.appendingPathComponent(CommonConfigs.urlPath)
     }
     
     public var path: String {
-        return "/public/v1/words/"
+        return ""
     }
     
     public var method: Moya.Method {
