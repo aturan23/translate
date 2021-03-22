@@ -50,6 +50,12 @@
 		4FECF5482608B6AB0081F034 /* JSONStandard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FECF5472608B6AB0081F034 /* JSONStandard.swift */; };
 		4FECF5532608B7890081F034 /* SearchTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FECF5522608B7890081F034 /* SearchTarget.swift */; };
 		4FECF55B2608B7BF0081F034 /* BaseTargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FECF55A2608B7BF0081F034 /* BaseTargetType.swift */; };
+		4FECF56F2608BC6B0081F034 /* EnvConfiguration.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4FECF56E2608BC6B0081F034 /* EnvConfiguration.plist */; };
+		4FECF5782608BCB30081F034 /* CommonConfiguration.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4FECF5772608BCB30081F034 /* CommonConfiguration.plist */; };
+		4FECF5892608C1F60081F034 /* SearchServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FECF5882608C1F60081F034 /* SearchServiceProtocol.swift */; };
+		4FECF5912608C25C0081F034 /* SearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FECF5902608C25C0081F034 /* SearchService.swift */; };
+		4FECF59E2608CBE90081F034 /* EnvConfigs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FECF59D2608CBE90081F034 /* EnvConfigs.swift */; };
+		4FECF5A32608CC650081F034 /* CommonConfigs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FECF5A22608CC650081F034 /* CommonConfigs.swift */; };
 		5BDFE7623D92390A42E3F050 /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C1A566466F24AB44C9B86DE /* MainPageViewController.swift */; };
 		6E084EB6F71C17D3C8219AEE /* MainPageModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0F677F6C52B2E512D06B44 /* MainPageModuleOutput.swift */; };
 		732EE00EBBACE27AD2EDEB10 /* MainPageViewProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDBC7E3F18A7E271212E071 /* MainPageViewProtocols.swift */; };
@@ -129,6 +135,14 @@
 		4FECF5472608B6AB0081F034 /* JSONStandard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONStandard.swift; sourceTree = "<group>"; };
 		4FECF5522608B7890081F034 /* SearchTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTarget.swift; sourceTree = "<group>"; };
 		4FECF55A2608B7BF0081F034 /* BaseTargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTargetType.swift; sourceTree = "<group>"; };
+		4FECF56E2608BC6B0081F034 /* EnvConfiguration.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = EnvConfiguration.plist; sourceTree = "<group>"; };
+		4FECF5762608BC8A0081F034 /* EnvConfiguration.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = EnvConfiguration.plist; sourceTree = "<group>"; };
+		4FECF5772608BCB30081F034 /* CommonConfiguration.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = CommonConfiguration.plist; sourceTree = "<group>"; };
+		4FECF5882608C1F60081F034 /* SearchServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchServiceProtocol.swift; sourceTree = "<group>"; };
+		4FECF5902608C25C0081F034 /* SearchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchService.swift; sourceTree = "<group>"; };
+		4FECF5962608C7FC0081F034 /* Colors.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Colors.json; sourceTree = "<group>"; };
+		4FECF59D2608CBE90081F034 /* EnvConfigs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvConfigs.swift; sourceTree = "<group>"; };
+		4FECF5A22608CC650081F034 /* CommonConfigs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonConfigs.swift; sourceTree = "<group>"; };
 		7C1A566466F24AB44C9B86DE /* MainPageViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
 		7F2121FFB13936345A81A481 /* Pods_SkyEngTranslate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SkyEngTranslate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8129DC0DE0B7A56906BD202B /* Pods-SkyEngTranslate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkyEngTranslate.release.xcconfig"; path = "Target Support Files/Pods-SkyEngTranslate/Pods-SkyEngTranslate.release.xcconfig"; sourceTree = "<group>"; };
@@ -226,13 +240,14 @@
 		4FECF41626088B7A0081F034 /* SkyEngTranslate */ = {
 			isa = PBXGroup;
 			children = (
+				4FECF56B2608BC3A0081F034 /* Configurations */,
 				4FECF51C2608B4030081F034 /* Core */,
 				4FECF47326089D080081F034 /* Source */,
 				4FECF467260897FB0081F034 /* Modules */,
+				4FECF5952608C7DE0081F034 /* Resources */,
 				4FECF41726088B7A0081F034 /* AppDelegate.swift */,
 				4FECF41926088B7A0081F034 /* SceneDelegate.swift */,
 				4FECF46E26089C410081F034 /* RootUIControllerType.swift */,
-				4FECF42026088B7D0081F034 /* Assets.xcassets */,
 				4FECF42226088B7D0081F034 /* LaunchScreen.storyboard */,
 				4FECF42526088B7D0081F034 /* Info.plist */,
 			);
@@ -371,6 +386,7 @@
 		4FECF51C2608B4030081F034 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				4FECF5872608C1E40081F034 /* Services */,
 				4FECF55F2608B7F30081F034 /* Data */,
 				4FECF51D2608B40C0081F034 /* Network */,
 				4FECF5512608B77D0081F034 /* Targets */,
@@ -404,8 +420,54 @@
 		4FECF55F2608B7F30081F034 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				4FECF59D2608CBE90081F034 /* EnvConfigs.swift */,
+				4FECF5A22608CC650081F034 /* CommonConfigs.swift */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		4FECF56B2608BC3A0081F034 /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				4FECF56C2608BC430081F034 /* Release */,
+				4FECF56D2608BC490081F034 /* Development */,
+				4FECF5772608BCB30081F034 /* CommonConfiguration.plist */,
+			);
+			path = Configurations;
+			sourceTree = "<group>";
+		};
+		4FECF56C2608BC430081F034 /* Release */ = {
+			isa = PBXGroup;
+			children = (
+				4FECF56E2608BC6B0081F034 /* EnvConfiguration.plist */,
+			);
+			path = Release;
+			sourceTree = "<group>";
+		};
+		4FECF56D2608BC490081F034 /* Development */ = {
+			isa = PBXGroup;
+			children = (
+				4FECF5762608BC8A0081F034 /* EnvConfiguration.plist */,
+			);
+			path = Development;
+			sourceTree = "<group>";
+		};
+		4FECF5872608C1E40081F034 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				4FECF5882608C1F60081F034 /* SearchServiceProtocol.swift */,
+				4FECF5902608C25C0081F034 /* SearchService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		4FECF5952608C7DE0081F034 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4FECF42026088B7D0081F034 /* Assets.xcassets */,
+				4FECF5962608C7FC0081F034 /* Colors.json */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		82D9047C26F8BBACCED9CBD5 /* Frameworks */ = {
@@ -446,6 +508,7 @@
 				4FECF41026088B7A0081F034 /* Sources */,
 				4FECF41126088B7A0081F034 /* Frameworks */,
 				4FECF41226088B7A0081F034 /* Resources */,
+				4FECF5992608CA750081F034 /* [CONFIG] Copy configuration file */,
 				2EF28CA65367F4CD7C9D47F7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
@@ -540,7 +603,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FECF56F2608BC6B0081F034 /* EnvConfiguration.plist in Resources */,
 				4FECF42426088B7D0081F034 /* LaunchScreen.storyboard in Resources */,
+				4FECF5782608BCB30081F034 /* CommonConfiguration.plist in Resources */,
 				4FECF42126088B7D0081F034 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -579,6 +644,24 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SkyEngTranslate/Pods-SkyEngTranslate-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		4FECF5992608CA750081F034 /* [CONFIG] Copy configuration file */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CONFIG] Copy configuration file";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "RESOURCE_PATH=${SRCROOT}/SkyEngTranslate/Configurations/${CONFIGURATION}\nif [ -e ${RESOURCE_PATH} ]\nthen\nBUILD_APP_DIR=${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app\necho \"Copying config files under ${RESOURCE_PATH} to ${BUILD_APP_DIR}\"\ncp -v \"${RESOURCE_PATH}/\"* \"${BUILD_APP_DIR}/\"\nfi\n";
+		};
 		5521319E954B9D76382AFECF /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -609,6 +692,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4FECF53E2608B6000081F034 /* Alamofire+NetworkReachabilityChecking.swift in Sources */,
+				4FECF5A32608CC650081F034 /* CommonConfigs.swift in Sources */,
 				4FECF47626089D430081F034 /* SetupCoordinating.swift in Sources */,
 				4FECF5042608AFAB0081F034 /* UIActivityIndicatorViewExtension.swift in Sources */,
 				4FECF4AC2608A4520081F034 /* TextFieldView.swift in Sources */,
@@ -634,8 +718,10 @@
 				4FECF5272608B4C10081F034 /* NetworkDataProvider.swift in Sources */,
 				4FECF4E42608AADC0081F034 /* Color.swift in Sources */,
 				4FECF5482608B6AB0081F034 /* JSONStandard.swift in Sources */,
+				4FECF5912608C25C0081F034 /* SearchService.swift in Sources */,
 				3210847354A8AF1EE251DA33 /* MainPageModuleInput.swift in Sources */,
 				6E084EB6F71C17D3C8219AEE /* MainPageModuleOutput.swift in Sources */,
+				4FECF59E2608CBE90081F034 /* EnvConfigs.swift in Sources */,
 				4FECF4EE2608AE090081F034 /* KeyboardListening.swift in Sources */,
 				4FECF4FC2608AF700081F034 /* IndicatorProtocol.swift in Sources */,
 				4FECF49226089E490081F034 /* Inject.swift in Sources */,
@@ -651,6 +737,7 @@
 				D8C6B59E5D14754B1EC331E0 /* MainPageRouter.swift in Sources */,
 				4FECF4C92608A86A0081F034 /* EditingAction.swift in Sources */,
 				4FECF46F26089C410081F034 /* RootUIControllerType.swift in Sources */,
+				4FECF5892608C1F60081F034 /* SearchServiceProtocol.swift in Sources */,
 				2849F7F757D710E4BBD06107 /* MainPageAssembly.swift in Sources */,
 				4FECF50E2608B03D0081F034 /* CALayerExtension.swift in Sources */,
 			);
