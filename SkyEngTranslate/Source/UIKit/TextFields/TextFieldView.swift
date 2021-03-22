@@ -213,7 +213,7 @@ final class TextFieldView: UIView {
             backgroundView.backgroundColor = Color.inputFillRegular
             hideErrorHint()
         case .active:
-            borderColor = Color.inputBorderActive
+            borderColor = Color.mainBlue
             borderWidth = Constants.activeBorderWidth
             placeholderTextColor = Color.textHighContrast
             animatePlaceholder(minimize: true)
