@@ -1,0 +1,15 @@
+{
+    "MainBlack"                 : "#1D1D1D",
+    "MainAttention"             : "#F5BB2E",
+    
+    "BackgroundMain"            : "#F1F7F9",
+    
+    "TextHighContrast"          : "#111111",
+    "TextLowContrast"           : "#575757",
+    "TextError"                 : "#CF0000",
+    
+    "InputFillRegular"          : "#FFFFFF",
+    "InputBorderRegular"        : "#D0DBE3",
+    
+    "MainBlue"                  : "#2D72E5",
+}
