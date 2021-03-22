@@ -1,0 +1,27 @@
+//
+//  {{ prefix }}{{ module_info.file_name }}
+//  {{ module_info.project_name }}
+//
+//  Created by {{ developer.name }} on {{ date }}.
+//  Copyright © {{ year }} {{ developer.company }}. All rights reserved.
+//
+
+typealias {{ module_info.name }}Configuration = ({{ module_info.name }}ModuleInput) -> {{ module_info.name }}ModuleOutput?
+
+final class {{ module_info.name }}ModuleAssembly: BaseModuleAssembly {
+    /// Assembles Module components and returns a target controller
+    ///
+    /// - Parameter configuration: optional configuration closure called by module owner
+    /// - Returns: Assembled module's ViewController
+    func assemble(_ configuration: {{ module_info.name }}Configuration? = nil) -> BaseViewController {
+        let viewController = {{ module_info.name }}ViewController()
+        let router = {{ module_info.name }}Router()
+        let viewModel = {{ module_info.name }}ViewModel()
+        viewModel.view = viewController
+        viewModel.router = router
+        router.viewController = viewController
+        viewController.output = viewModel
+        viewModel.moduleOutput = configuration?(viewModel)
+        return viewController
+    }
+}

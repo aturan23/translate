@@ -1,0 +1,39 @@
+//
+//  {{ module_info.file_name }}
+//  {{ module_info.project_name }}
+//
+//  Created by {{ developer.name }} on {{ date }}.
+//  Copyright © {{ year }} {{ developer.company }}. All rights reserved.
+//
+
+class {{ module_info.name }}ViewModel: {{ module_info.name }}ViewOutput {
+
+    // ------------------------------
+	// MARK: - Properties
+    // ------------------------------
+
+    weak var view: {{ module_info.name }}ViewInput?
+    var router: {{ module_info.name }}RouterInput?
+    weak var moduleOutput: {{ module_info.name }}ModuleOutput?
+
+    // ------------------------------
+    // MARK: - {{ module_info.name }}ViewOutput methods
+    // ------------------------------
+
+    func didLoad() {
+        view?.display(viewAdapter: {{ module_info.name }}ViewAdapter())
+    }
+
+    // ------------------------------
+    // MARK: - Private methods
+    // ------------------------------
+    
+}
+
+// ------------------------------
+// MARK: - {{ module_info.name }}ModuleInput methods
+// ------------------------------
+
+extension {{ module_info.name }}ViewModel: {{ module_info.name }}ModuleInput {
+    func configure(data: {{ module_info.name }}ConfigData) { }
+}

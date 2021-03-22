@@ -1,0 +1,24 @@
+# Template information section
+name: "translate_swift_mvvm"
+summary: "Swift MVVM module template with ModuleInput and ModuleOutput protocols"
+author: "Assylkhan Turan"
+
+# The declarations for code files
+
+code_files:
+# View layer
+- {name: View/ViewProtocols.swift,  path: Code/View/view_protocols.swift.liquid}
+- {name: View/ViewController.swift, path: Code/View/view_controller.swift.liquid}
+- {name: View/ViewAdapter.swift, path: Code/View/view_adapter.swift.liquid}
+
+# ViewModel layer
+- {name: ViewModel/ModuleInput.swift, path: Code/ViewModel/module_input.swift.liquid}
+- {name: ViewModel/ModuleOutput.swift, path: Code/ViewModel/module_output.swift.liquid}
+- {name: ViewModel/ViewModel.swift, path: Code/ViewModel/view_model.swift.liquid}
+
+# Router layer
+- {name: Router/RouterInput.swift, path: Code/Router/router_input.swift.liquid}
+- {name: Router/Router.swift, path: Code/Router/router.swift.liquid}
+
+# Assembly
+- {name: Assembly/Assembly.swift, path: Code/Assembly/assembly.swift.liquid}
