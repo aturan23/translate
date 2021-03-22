@@ -6,6 +6,8 @@
 //  Copyright © 2021 Assylkhan Turan. All rights reserved.
 //
 
+typealias WordsSectionModel = TableViewSectionModel<WordsCellAdapter>
+
 class MainPageViewModel: MainPageViewOutput {
 
     // ------------------------------
@@ -22,7 +24,7 @@ class MainPageViewModel: MainPageViewOutput {
     // ------------------------------
 
     func didLoad() {
-        view?.display(viewAdapter: MainPageViewAdapter())
+        
     }
     
     func didTapSearchButton() {
@@ -39,14 +41,29 @@ class MainPageViewModel: MainPageViewOutput {
     // ------------------------------
     
     private func getWords(from text: String) {
-        searchService?.getWords(text: text, completion: { (result) in
+        searchService?.getWords(text: text, completion: { [weak self] (result) in
+            guard let self = self else { return }
             switch result {
             case .success(let response):
-                print(response)
+                self.view?.display(viewAdapter: self.buildAdapter(from: response))
             case .failure(let error):
                 print(error.message)
             }
         })
+    }
+    
+    private func buildAdapter(from words: [Word]) -> MainPageViewAdapter {
+        let sectionModels = buildSectionModels(with: words)
+        return MainPageViewAdapter(sectionModels: sectionModels)
+    }
+    
+    private func buildSectionModels(with words: [Word]) -> [WordsSectionModel] {
+        words.map { word -> WordsSectionModel in
+            let adapters = word.meanings.map { WordsCellAdapter.makeFor(word: $0) }
+            return WordsSectionModel(title: word.text,
+                                     items: adapters,
+                                     onSelection: {_ in})
+        }
     }
 }
 
