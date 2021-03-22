@@ -8,5 +8,5 @@
 import Foundation
 
 protocol SearchServiceProtocol {
-    func getWords(text: String, completion: @escaping (APIResult<String>) -> ())
+    func getWords(text: String, completion: @escaping (APIResult<[Word]>) -> ())
 }
