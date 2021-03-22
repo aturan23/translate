@@ -19,13 +19,13 @@ final class SearchService: SearchServiceProtocol {
     
     // MARK: - SearchServiceProtocol
     
-    func getWords(text: String, completion: @escaping (APIResult<String>) -> ()) {
-        dataProvider.request(.search(text: text)) { (result: APIResult<String>) in
+    func getWords(text: String, completion: @escaping (APIResult<[Word]>) -> ()) {
+        dataProvider.request(.search(text: text)) { (result: APIResult<[Word]>) in
             switch result {
             case .success(let response):
-                print(response)
+                completion(.success(response))
             case .failure(let error):
-                print(error.message)
+                completion(.failure(error))
             }
         }
     }
