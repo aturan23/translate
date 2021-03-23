@@ -34,7 +34,7 @@
 		4FECF4D12608A8CC0081F034 /* MaskedTextfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FECF4D02608A8CC0081F034 /* MaskedTextfield.swift */; };
 		4FECF4D72608A9F60081F034 /* UIFontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FECF4D62608A9F60081F034 /* UIFontExtension.swift */; };
 		4FECF4DF2608AA750081F034 /* UILabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FECF4DE2608AA750081F034 /* UILabelExtension.swift */; };
-		4FECF4E42608AADC0081F034 /* BuildFile in Sources */ = {isa = PBXBuildFile; };
+		4FECF4E42608AADC0081F034 /* (null) in Sources */ = {isa = PBXBuildFile; };
 		4FECF4E92608AB0B0081F034 /* TextFieldViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FECF4E82608AB0B0081F034 /* TextFieldViewOutput.swift */; };
 		4FECF4EE2608AE090081F034 /* KeyboardListening.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FECF4ED2608AE090081F034 /* KeyboardListening.swift */; };
 		4FECF4F42608AF4F0081F034 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FECF4F32608AF4F0081F034 /* Button.swift */; };
@@ -263,7 +263,6 @@
 				FF7326F42AE3481A3048547B /* DetailPageModuleOutput.swift */,
 				3C66EF545FA1D6AEF24467E0 /* DetailPageViewModel.swift */,
 			);
-			name = ViewModel;
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
@@ -284,7 +283,6 @@
 				7AE5D51CACC67909D46A9910 /* DetailPageRouterInput.swift */,
 				68B37F227CA4F4ABB29A2E68 /* DetailPageRouter.swift */,
 			);
-			name = Router;
 			path = Router;
 			sourceTree = "<group>";
 		};
@@ -295,7 +293,6 @@
 				AAB674F1D80211D2F3CC05D6 /* DetailPageViewController.swift */,
 				BFBFF98F7EB08270DA246A66 /* DetailPageViewAdapter.swift */,
 			);
-			name = View;
 			path = View;
 			sourceTree = "<group>";
 		};
@@ -488,8 +485,8 @@
 		4FECF51C2608B4030081F034 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				4FECF5872608C1E40081F034 /* Services */,
 				4FECF51D2608B40C0081F034 /* Network */,
+				4FECF5872608C1E40081F034 /* Services */,
 				4FECF5512608B77D0081F034 /* Targets */,
 			);
 			path = Core;
@@ -636,7 +633,6 @@
 				417FFA3680C6B6B42F5DB202 /* Router */,
 				E29B25D2BA3FAE885096EE82 /* Assembly */,
 			);
-			name = DetailPage;
 			path = DetailPage;
 			sourceTree = "<group>";
 		};
@@ -664,7 +660,6 @@
 			children = (
 				794394810B9237E381771696 /* DetailPageAssembly.swift */,
 			);
-			name = Assembly;
 			path = Assembly;
 			sourceTree = "<group>";
 		};
@@ -902,7 +897,7 @@
 				4FECF6362608DB6F0081F034 /* UIImageViewExtension.swift in Sources */,
 				4FECF49826089FDB0081F034 /* ContainerExtension.swift in Sources */,
 				4FECF5272608B4C10081F034 /* NetworkDataProvider.swift in Sources */,
-				4FECF4E42608AADC0081F034 /* BuildFile in Sources */,
+				4FECF4E42608AADC0081F034 /* (null) in Sources */,
 				4FECF5482608B6AB0081F034 /* JSONStandard.swift in Sources */,
 				4FECF5912608C25C0081F034 /* SearchService.swift in Sources */,
 				3210847354A8AF1EE251DA33 /* MainPageModuleInput.swift in Sources */,
