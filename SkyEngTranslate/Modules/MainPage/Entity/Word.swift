@@ -37,3 +37,33 @@ struct Translation: Codable {
     let text: String
     let note: String?
 }
+
+struct DetailedMeaning: Codable {
+    let prefix: String?
+    let text: String
+    let transcription: String?
+    
+    var title: String {
+        let pref = prefix ?? ""
+        return "\(pref.isEmpty ? "" : "\(pref) ")\(text)"
+    }
+    var imageUrl: URL? {
+        images.first?.url ?? nil
+    }
+    let translation: Translation
+    let images: [MeaningImage]
+}
+
+struct MeaningImage: Codable {
+    let url: URL?
+    
+    enum CodingKeys: String, CodingKey {
+        case url
+    }
+    
+    init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        let preview = try container.decode(String.self, forKey: .url).replacingOccurrences(of: "//", with: "http://")
+        url = URL(string: preview)
+    }
+}
