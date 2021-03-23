@@ -23,6 +23,7 @@ internal typealias AssetImageTypeAlias = ImageAsset.Image
 internal enum Asset {
   internal static let accentColor = ColorAsset(name: "AccentColor")
   internal static let defaultLogo = ImageAsset(name: "default_logo")
+  internal static let empty = ImageAsset(name: "empty")
   internal static let iconClearTextfield = ImageAsset(name: "icon_clear_textfield")
   internal static let iconMore = ImageAsset(name: "icon_more")
   internal static let iconNoData = ImageAsset(name: "icon_no_data")
