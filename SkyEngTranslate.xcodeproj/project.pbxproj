@@ -18,7 +18,6 @@
 		4FECF42126088B7D0081F034 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FECF42026088B7D0081F034 /* Assets.xcassets */; };
 		4FECF42426088B7D0081F034 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FECF42226088B7D0081F034 /* LaunchScreen.storyboard */; };
 		4FECF42F26088B7D0081F034 /* SkyEngTranslateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FECF42E26088B7D0081F034 /* SkyEngTranslateTests.swift */; };
-		4FECF43A26088B7D0081F034 /* SkyEngTranslateUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FECF43926088B7D0081F034 /* SkyEngTranslateUITests.swift */; };
 		4FECF46F26089C410081F034 /* RootUIControllerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FECF46E26089C410081F034 /* RootUIControllerType.swift */; };
 		4FECF47626089D430081F034 /* SetupCoordinating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FECF47526089D430081F034 /* SetupCoordinating.swift */; };
 		4FECF47E26089D6B0081F034 /* SetupCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FECF47D26089D6B0081F034 /* SetupCoordinator.swift */; };
@@ -81,6 +80,9 @@
 		4FECF67226096EB10081F034 /* StackContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FECF67126096EB10081F034 /* StackContainerView.swift */; };
 		4FECF67A26096EEB0081F034 /* ShimmeringView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FECF67926096EEB0081F034 /* ShimmeringView.swift */; };
 		4FECF69D260983130081F034 /* MeaningCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FECF69C260983130081F034 /* MeaningCardView.swift */; };
+		4FECF6A42609950C0081F034 /* MainPageModuleAssemblyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FECF6A32609950C0081F034 /* MainPageModuleAssemblyTests.swift */; };
+		4FECF6DB260998BD0081F034 /* Pods_SkyEngTranslate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FECF6DA260998BD0081F034 /* Pods_SkyEngTranslate.framework */; };
+		4FECF6EE26099B7C0081F034 /* DetailPageModuleAssemblyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FECF6ED26099B7C0081F034 /* DetailPageModuleAssemblyTests.swift */; };
 		5BDFE7623D92390A42E3F050 /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C1A566466F24AB44C9B86DE /* MainPageViewController.swift */; };
 		6E084EB6F71C17D3C8219AEE /* MainPageModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0F677F6C52B2E512D06B44 /* MainPageModuleOutput.swift */; };
 		732EE00EBBACE27AD2EDEB10 /* MainPageViewProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDBC7E3F18A7E271212E071 /* MainPageViewProtocols.swift */; };
@@ -98,13 +100,6 @@
 
 /* Begin PBXContainerItemProxy section */
 		4FECF42B26088B7D0081F034 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4FECF40C26088B7A0081F034 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4FECF41326088B7A0081F034;
-			remoteInfo = SkyEngTranslate;
-		};
-		4FECF43626088B7D0081F034 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 4FECF40C26088B7A0081F034 /* Project object */;
 			proxyType = 1;
@@ -130,9 +125,6 @@
 		4FECF42A26088B7D0081F034 /* SkyEngTranslateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SkyEngTranslateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FECF42E26088B7D0081F034 /* SkyEngTranslateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkyEngTranslateTests.swift; sourceTree = "<group>"; };
 		4FECF43026088B7D0081F034 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4FECF43526088B7D0081F034 /* SkyEngTranslateUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SkyEngTranslateUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4FECF43926088B7D0081F034 /* SkyEngTranslateUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkyEngTranslateUITests.swift; sourceTree = "<group>"; };
-		4FECF43B26088B7D0081F034 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4FECF46E26089C410081F034 /* RootUIControllerType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootUIControllerType.swift; sourceTree = "<group>"; };
 		4FECF47526089D430081F034 /* SetupCoordinating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupCoordinating.swift; sourceTree = "<group>"; };
 		4FECF47D26089D6B0081F034 /* SetupCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupCoordinator.swift; sourceTree = "<group>"; };
@@ -195,6 +187,15 @@
 		4FECF67126096EB10081F034 /* StackContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackContainerView.swift; sourceTree = "<group>"; };
 		4FECF67926096EEB0081F034 /* ShimmeringView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShimmeringView.swift; sourceTree = "<group>"; };
 		4FECF69C260983130081F034 /* MeaningCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeaningCardView.swift; sourceTree = "<group>"; };
+		4FECF6A32609950C0081F034 /* MainPageModuleAssemblyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageModuleAssemblyTests.swift; sourceTree = "<group>"; };
+		4FECF6AB2609967D0081F034 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FECF6B5260997360081F034 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FECF6B72609973D0081F034 /* Kingfisher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Kingfisher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FECF6B9260997430081F034 /* Moya.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Moya.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FECF6BD2609974F0081F034 /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FECF6BF260997570081F034 /* Swinject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Swinject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FECF6DA260998BD0081F034 /* Pods_SkyEngTranslate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_SkyEngTranslate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FECF6ED26099B7C0081F034 /* DetailPageModuleAssemblyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPageModuleAssemblyTests.swift; sourceTree = "<group>"; };
 		68B37F227CA4F4ABB29A2E68 /* DetailPageRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DetailPageRouter.swift; sourceTree = "<group>"; };
 		794394810B9237E381771696 /* DetailPageAssembly.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DetailPageAssembly.swift; sourceTree = "<group>"; };
 		7AE5D51CACC67909D46A9910 /* DetailPageRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DetailPageRouterInput.swift; sourceTree = "<group>"; };
@@ -224,13 +225,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4FECF43226088B7D0081F034 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				4FECF6DB260998BD0081F034 /* Pods_SkyEngTranslate.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,7 +307,6 @@
 			children = (
 				4FECF41626088B7A0081F034 /* SkyEngTranslate */,
 				4FECF42D26088B7D0081F034 /* SkyEngTranslateTests */,
-				4FECF43826088B7D0081F034 /* SkyEngTranslateUITests */,
 				4FECF41526088B7A0081F034 /* Products */,
 				16322265BE61238053A213C3 /* Pods */,
 				82D9047C26F8BBACCED9CBD5 /* Frameworks */,
@@ -324,7 +318,6 @@
 			children = (
 				4FECF41426088B7A0081F034 /* SkyEngTranslate.app */,
 				4FECF42A26088B7D0081F034 /* SkyEngTranslateTests.xctest */,
-				4FECF43526088B7D0081F034 /* SkyEngTranslateUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -350,19 +343,12 @@
 		4FECF42D26088B7D0081F034 /* SkyEngTranslateTests */ = {
 			isa = PBXGroup;
 			children = (
+				4FECF6EB26099B640081F034 /* DetailPage */,
+				4FECF6A1260994E60081F034 /* MainPage */,
 				4FECF42E26088B7D0081F034 /* SkyEngTranslateTests.swift */,
 				4FECF43026088B7D0081F034 /* Info.plist */,
 			);
 			path = SkyEngTranslateTests;
-			sourceTree = "<group>";
-		};
-		4FECF43826088B7D0081F034 /* SkyEngTranslateUITests */ = {
-			isa = PBXGroup;
-			children = (
-				4FECF43926088B7D0081F034 /* SkyEngTranslateUITests.swift */,
-				4FECF43B26088B7D0081F034 /* Info.plist */,
-			);
-			path = SkyEngTranslateUITests;
 			sourceTree = "<group>";
 		};
 		4FECF467260897FB0081F034 /* Modules */ = {
@@ -628,9 +614,48 @@
 			path = Subviews;
 			sourceTree = "<group>";
 		};
+		4FECF6A1260994E60081F034 /* MainPage */ = {
+			isa = PBXGroup;
+			children = (
+				4FECF6A2260994F30081F034 /* Assembly */,
+			);
+			path = MainPage;
+			sourceTree = "<group>";
+		};
+		4FECF6A2260994F30081F034 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				4FECF6A32609950C0081F034 /* MainPageModuleAssemblyTests.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		4FECF6EB26099B640081F034 /* DetailPage */ = {
+			isa = PBXGroup;
+			children = (
+				4FECF6EC26099B730081F034 /* Assembly */,
+			);
+			path = DetailPage;
+			sourceTree = "<group>";
+		};
+		4FECF6EC26099B730081F034 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				4FECF6ED26099B7C0081F034 /* DetailPageModuleAssemblyTests.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
 		82D9047C26F8BBACCED9CBD5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4FECF6DA260998BD0081F034 /* Pods_SkyEngTranslate.framework */,
+				4FECF6BF260997570081F034 /* Swinject.framework */,
+				4FECF6BD2609974F0081F034 /* SnapKit.framework */,
+				4FECF6B9260997430081F034 /* Moya.framework */,
+				4FECF6B72609973D0081F034 /* Kingfisher.framework */,
+				4FECF6B5260997360081F034 /* Alamofire.framework */,
+				4FECF6AB2609967D0081F034 /* Alamofire.framework */,
 				7F2121FFB13936345A81A481 /* Pods_SkyEngTranslate.framework */,
 			);
 			name = Frameworks;
@@ -715,24 +740,6 @@
 			productReference = 4FECF42A26088B7D0081F034 /* SkyEngTranslateTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		4FECF43426088B7D0081F034 /* SkyEngTranslateUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4FECF44426088B7D0081F034 /* Build configuration list for PBXNativeTarget "SkyEngTranslateUITests" */;
-			buildPhases = (
-				4FECF43126088B7D0081F034 /* Sources */,
-				4FECF43226088B7D0081F034 /* Frameworks */,
-				4FECF43326088B7D0081F034 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				4FECF43726088B7D0081F034 /* PBXTargetDependency */,
-			);
-			name = SkyEngTranslateUITests;
-			productName = SkyEngTranslateUITests;
-			productReference = 4FECF43526088B7D0081F034 /* SkyEngTranslateUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -746,10 +753,6 @@
 						CreatedOnToolsVersion = 12.4;
 					};
 					4FECF42926088B7D0081F034 = {
-						CreatedOnToolsVersion = 12.4;
-						TestTargetID = 4FECF41326088B7A0081F034;
-					};
-					4FECF43426088B7D0081F034 = {
 						CreatedOnToolsVersion = 12.4;
 						TestTargetID = 4FECF41326088B7A0081F034;
 					};
@@ -770,7 +773,6 @@
 			targets = (
 				4FECF41326088B7A0081F034 /* SkyEngTranslate */,
 				4FECF42926088B7D0081F034 /* SkyEngTranslateTests */,
-				4FECF43426088B7D0081F034 /* SkyEngTranslateUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -789,13 +791,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		4FECF42826088B7D0081F034 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4FECF43326088B7D0081F034 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -956,14 +951,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4FECF42F26088B7D0081F034 /* SkyEngTranslateTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4FECF43126088B7D0081F034 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4FECF43A26088B7D0081F034 /* SkyEngTranslateUITests.swift in Sources */,
+				4FECF6EE26099B7C0081F034 /* DetailPageModuleAssemblyTests.swift in Sources */,
+				4FECF6A42609950C0081F034 /* MainPageModuleAssemblyTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -974,11 +963,6 @@
 			isa = PBXTargetDependency;
 			target = 4FECF41326088B7A0081F034 /* SkyEngTranslate */;
 			targetProxy = 4FECF42B26088B7D0081F034 /* PBXContainerItemProxy */;
-		};
-		4FECF43726088B7D0081F034 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 4FECF41326088B7A0081F034 /* SkyEngTranslate */;
-			targetProxy = 4FECF43626088B7D0081F034 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1154,6 +1138,7 @@
 		};
 		4FECF44226088B7D0081F034 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7E805A282F53CE24314643D /* Pods-SkyEngTranslate.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -1176,6 +1161,7 @@
 		};
 		4FECF44326088B7D0081F034 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8129DC0DE0B7A56906BD202B /* Pods-SkyEngTranslate.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -1193,46 +1179,6 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SkyEngTranslate.app/SkyEngTranslate";
-			};
-			name = Release;
-		};
-		4FECF44526088B7D0081F034 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = A439DVJ2X6;
-				INFOPLIST_FILE = SkyEngTranslateUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = aturan23.SkyEngTranslateUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = SkyEngTranslate;
-			};
-			name = Debug;
-		};
-		4FECF44626088B7D0081F034 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = A439DVJ2X6;
-				INFOPLIST_FILE = SkyEngTranslateUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = aturan23.SkyEngTranslateUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = SkyEngTranslate;
 			};
 			name = Release;
 		};
@@ -1262,15 +1208,6 @@
 			buildConfigurations = (
 				4FECF44226088B7D0081F034 /* Debug */,
 				4FECF44326088B7D0081F034 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		4FECF44426088B7D0081F034 /* Build configuration list for PBXNativeTarget "SkyEngTranslateUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4FECF44526088B7D0081F034 /* Debug */,
-				4FECF44626088B7D0081F034 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
