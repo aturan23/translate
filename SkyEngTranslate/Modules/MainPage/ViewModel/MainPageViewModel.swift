@@ -20,6 +20,7 @@ class MainPageViewModel: MainPageViewOutput {
     var router: MainPageRouterInput?
     weak var moduleOutput: MainPageModuleOutput?
     var searchService: SearchServiceProtocol?
+    private var words: [Word] = []
 
     // ------------------------------
     // MARK: - MainPageViewOutput methods
@@ -52,6 +53,7 @@ class MainPageViewModel: MainPageViewOutput {
             guard let self = self else { return }
             switch result {
             case .success(let response):
+                self.words = response
                 self.view?.display(viewAdapter: self.buildAdapter(from: response))
             case .failure(let error):
                 print(error.message)
@@ -75,7 +77,7 @@ class MainPageViewModel: MainPageViewOutput {
     }
     
     private func didSelectRowAt(indexPath: IndexPath) {
-        
+        router?.routeToDetail(with: words[indexPath.section].meanings[indexPath.row])
     }
     
     private func buildCellModels(from meanings: [Meaning]) -> [WordsCellAdapter] {

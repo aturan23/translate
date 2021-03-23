@@ -8,7 +8,9 @@
 
 /// Adapter struct for DetailPage initial configuration 
 /// through DetailPageModuleInput
-struct DetailPageConfigData { }
+struct DetailPageConfigData {
+    let model: Meaning
+}
 
 /// Protocol with public methods to configure DetailPage 
 /// from its parent module (usually implemented by this module's ViewModel)

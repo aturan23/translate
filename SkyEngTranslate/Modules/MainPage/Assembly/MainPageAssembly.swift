@@ -15,7 +15,8 @@ final class MainPageModuleAssembly: BaseModuleAssembly {
     /// - Returns: Assembled module's ViewController
     func assemble(_ configuration: MainPageConfiguration? = nil) -> BaseViewController {
         let viewController = MainPageViewController()
-        let router = MainPageRouter()
+        let router = MainPageRouter(
+            detailPageAssembly: injection.inject(DetailPageModuleAssembly.self))
         let viewModel = MainPageViewModel()
         viewModel.view = viewController
         viewModel.router = router
