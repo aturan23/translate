@@ -19,6 +19,7 @@ final class DetailPageModuleAssembly: BaseModuleAssembly {
         let viewModel = DetailPageViewModel()
         viewModel.view = viewController
         viewModel.router = router
+        viewModel.searchService = injection.inject(SearchServiceProtocol.self)
         router.viewController = viewController
         viewController.output = viewModel
         viewModel.moduleOutput = configuration?(viewModel)

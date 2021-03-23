@@ -29,4 +29,15 @@ final class SearchService: SearchServiceProtocol {
             }
         }
     }
+    
+    func getMeaning(id: Int, completion: @escaping (APIResult<[DetailedMeaning]>) -> ()) {
+        dataProvider.request(.meaning(id: id)) { (result: APIResult<[DetailedMeaning]>) in
+            switch result {
+            case .success(let response):
+                completion(.success(response))
+            case .failure(let error):
+                completion(.failure(error))
+            }
+        }
+    }
 }

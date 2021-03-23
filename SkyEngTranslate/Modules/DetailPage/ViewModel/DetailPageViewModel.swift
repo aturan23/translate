@@ -15,19 +15,33 @@ class DetailPageViewModel: DetailPageViewOutput {
     weak var view: DetailPageViewInput?
     var router: DetailPageRouterInput?
     weak var moduleOutput: DetailPageModuleOutput?
+    private var configData: DetailPageConfigData?
+    var searchService: SearchServiceProtocol?
 
     // ------------------------------
     // MARK: - DetailPageViewOutput methods
     // ------------------------------
 
     func didLoad() {
-        view?.display(viewAdapter: DetailPageViewAdapter())
+        view?.display(viewAdapter: DetailPageViewAdapter(model: nil))
+        fetchDetailedMeaning()
     }
 
     // ------------------------------
     // MARK: - Private methods
     // ------------------------------
     
+    private func fetchDetailedMeaning() {
+        guard let id = configData?.model.id else { return }
+        searchService?.getMeaning(id: id, completion: { (result) in
+            switch result {
+            case .success(let model):
+                print(model)
+            case .failure(let error):
+                print(error.message)
+            }
+        })
+    }
 }
 
 // ------------------------------
@@ -35,5 +49,7 @@ class DetailPageViewModel: DetailPageViewOutput {
 // ------------------------------
 
 extension DetailPageViewModel: DetailPageModuleInput {
-    func configure(data: DetailPageConfigData) { }
+    func configure(data: DetailPageConfigData) {
+        configData = data
+    }
 }
