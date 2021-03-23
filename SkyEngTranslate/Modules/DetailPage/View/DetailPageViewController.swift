@@ -21,7 +21,6 @@ class DetailPageViewController: BaseViewController, DetailPageViewInput {
     // ------------------------------
     
     private let cardView = MeaningCardView()
-    private let labelFactory = LabelFactory()
 
     // ------------------------------
     // MARK: - Life cycle
@@ -48,7 +47,9 @@ class DetailPageViewController: BaseViewController, DetailPageViewInput {
     // ------------------------------
 
     func display(viewAdapter: DetailPageViewAdapter) {
+        cardView.set(loading: true)
         guard let model = viewAdapter.model else { return }
+        cardView.set(loading: false)
         title = model.title
         cardView.display(imageUrl: model.imageUrl, title: model.title, translation: model.translation.text)
     }

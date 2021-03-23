@@ -7,10 +7,11 @@
 
 import UIKit
 
-class MeaningCardView: UIView {
+class MeaningCardView: UIView, ShimmeringViewPresentable {
     
     private enum Constants {
         static let imageHeight: CGFloat = 160
+        static let viewRadius: CGFloat = 16
     }
     
     // ------------------------------
@@ -21,6 +22,8 @@ class MeaningCardView: UIView {
     // MARK: - UI components
     // ------------------------------
     
+    lazy var compoundShimmeringViews = setupShimmeringViews()
+    var shimmerableOriginalViews: [UIView]?
     private let labelFactory = LabelFactory()
     private lazy var titleLabel = labelFactory.make(
         withStyle: TextStyle.headingH2,
@@ -44,6 +47,10 @@ class MeaningCardView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
+    func set(loading: Bool) {
+        loading ? startShimmering() : stopShimmering()
+    }
+    
     func display(imageUrl: URL?, title: String, translation: String) {
         if let url = imageUrl {
             imageView.setImage(with: url)
@@ -60,7 +67,7 @@ class MeaningCardView: UIView {
     
     private func setupViews() {
         backgroundColor = Color.mainBlue
-        layer.cornerRadius = 16
+        layer.cornerRadius = Constants.viewRadius
         layer.masksToBounds = true
         
         setupViewsHierarchy()
@@ -85,5 +92,15 @@ class MeaningCardView: UIView {
             $0.top.equalTo(titleLabel.snp.bottom).offset(LayoutGuidance.offsetQuarter)
             $0.left.right.bottom.equalToSuperview().inset(LayoutGuidance.offsetThreeQuarters)
         }
+    }
+    
+    private func setupShimmeringViews() -> UIView {
+        let shimmeringView = ShimmeringView(cornerRadius: Constants.viewRadius)
+        addSubview(shimmeringView)
+        shimmeringView.snp.makeConstraints {
+            $0.top.width.equalToSuperview()
+            $0.height.equalTo(240)
+        }
+        return shimmeringView
     }
 }
