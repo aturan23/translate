@@ -27,6 +27,9 @@ extension Container {
         register(MainPageModuleAssembly.self) { _ in
             MainPageModuleAssembly(injection: self)
         }
+        register(DetailPageModuleAssembly.self) { _ in
+            DetailPageModuleAssembly(injection: self)
+        }
         return self
     }
     
