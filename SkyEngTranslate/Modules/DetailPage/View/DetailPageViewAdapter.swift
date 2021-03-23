@@ -7,4 +7,6 @@
 //
 
 /// Default ViewModel passed to View layer for displaying
-struct DetailPageViewAdapter { }
+struct DetailPageViewAdapter {
+    let model: DetailedMeaning?
+}

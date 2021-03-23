@@ -33,10 +33,11 @@ class DetailPageViewModel: DetailPageViewOutput {
     
     private func fetchDetailedMeaning() {
         guard let id = configData?.model.id else { return }
-        searchService?.getMeaning(id: id, completion: { (result) in
+        searchService?.getMeaning(id: id, completion: { [weak self] (result) in
+            guard let self = self else { return }
             switch result {
             case .success(let model):
-                print(model)
+                self.view?.display(viewAdapter: .init(model: model))
             case .failure(let error):
                 print(error.message)
             }

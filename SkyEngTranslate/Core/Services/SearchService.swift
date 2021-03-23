@@ -30,11 +30,15 @@ final class SearchService: SearchServiceProtocol {
         }
     }
     
-    func getMeaning(id: Int, completion: @escaping (APIResult<[DetailedMeaning]>) -> ()) {
+    func getMeaning(id: Int, completion: @escaping (APIResult<DetailedMeaning>) -> ()) {
         dataProvider.request(.meaning(id: id)) { (result: APIResult<[DetailedMeaning]>) in
             switch result {
             case .success(let response):
-                completion(.success(response))
+                if let model = response.first {
+                    completion(.success(model))
+                    return
+                }
+                completion(.failure(.incorrectJSON))
             case .failure(let error):
                 completion(.failure(error))
             }
