@@ -70,6 +70,13 @@
 		4FECF6362608DB6F0081F034 /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FECF6352608DB6F0081F034 /* UIImageViewExtension.swift */; };
 		4FECF63F2608DBAD0081F034 /* SeparatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FECF63E2608DBAD0081F034 /* SeparatorView.swift */; };
 		4FECF6472608DC520081F034 /* WordsCellAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FECF6462608DC520081F034 /* WordsCellAdapter.swift */; };
+		4FECF65726096C7F0081F034 /* ShimmeringViewPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FECF65626096C7F0081F034 /* ShimmeringViewPresentable.swift */; };
+		4FECF65C26096CB90081F034 /* TableStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FECF65B26096CB90081F034 /* TableStatusView.swift */; };
+		4FECF66126096CD80081F034 /* LoadingFailurePresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FECF66026096CD80081F034 /* LoadingFailurePresentable.swift */; };
+		4FECF66626096CFC0081F034 /* LoadingFailureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FECF66526096CFC0081F034 /* LoadingFailureView.swift */; };
+		4FECF66B26096E290081F034 /* EmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FECF66A26096E290081F034 /* EmptyStateView.swift */; };
+		4FECF67226096EB10081F034 /* StackContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FECF67126096EB10081F034 /* StackContainerView.swift */; };
+		4FECF67A26096EEB0081F034 /* ShimmeringView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FECF67926096EEB0081F034 /* ShimmeringView.swift */; };
 		5BDFE7623D92390A42E3F050 /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C1A566466F24AB44C9B86DE /* MainPageViewController.swift */; };
 		6E084EB6F71C17D3C8219AEE /* MainPageModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0F677F6C52B2E512D06B44 /* MainPageModuleOutput.swift */; };
 		732EE00EBBACE27AD2EDEB10 /* MainPageViewProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDBC7E3F18A7E271212E071 /* MainPageViewProtocols.swift */; };
@@ -169,6 +176,13 @@
 		4FECF6352608DB6F0081F034 /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
 		4FECF63E2608DBAD0081F034 /* SeparatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeparatorView.swift; sourceTree = "<group>"; };
 		4FECF6462608DC520081F034 /* WordsCellAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsCellAdapter.swift; sourceTree = "<group>"; };
+		4FECF65626096C7F0081F034 /* ShimmeringViewPresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShimmeringViewPresentable.swift; sourceTree = "<group>"; };
+		4FECF65B26096CB90081F034 /* TableStatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableStatusView.swift; sourceTree = "<group>"; };
+		4FECF66026096CD80081F034 /* LoadingFailurePresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingFailurePresentable.swift; sourceTree = "<group>"; };
+		4FECF66526096CFC0081F034 /* LoadingFailureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingFailureView.swift; sourceTree = "<group>"; };
+		4FECF66A26096E290081F034 /* EmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStateView.swift; sourceTree = "<group>"; };
+		4FECF67126096EB10081F034 /* StackContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackContainerView.swift; sourceTree = "<group>"; };
+		4FECF67926096EEB0081F034 /* ShimmeringView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShimmeringView.swift; sourceTree = "<group>"; };
 		7C1A566466F24AB44C9B86DE /* MainPageViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
 		7F2121FFB13936345A81A481 /* Pods_SkyEngTranslate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SkyEngTranslate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8129DC0DE0B7A56906BD202B /* Pods-SkyEngTranslate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkyEngTranslate.release.xcconfig"; path = "Target Support Files/Pods-SkyEngTranslate/Pods-SkyEngTranslate.release.xcconfig"; sourceTree = "<group>"; };
@@ -349,6 +363,7 @@
 		4FECF49F2608A00F0081F034 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				4FECF67026096EAB0081F034 /* StackViews */,
 				4FECF63D2608DBA60081F034 /* Views */,
 				4FECF6142608DA4E0081F034 /* ImageViews */,
 				4FECF4D52608A9EC0081F034 /* Extensions */,
@@ -536,8 +551,22 @@
 			isa = PBXGroup;
 			children = (
 				4FECF63E2608DBAD0081F034 /* SeparatorView.swift */,
+				4FECF65626096C7F0081F034 /* ShimmeringViewPresentable.swift */,
+				4FECF65B26096CB90081F034 /* TableStatusView.swift */,
+				4FECF66026096CD80081F034 /* LoadingFailurePresentable.swift */,
+				4FECF66526096CFC0081F034 /* LoadingFailureView.swift */,
+				4FECF66A26096E290081F034 /* EmptyStateView.swift */,
+				4FECF67926096EEB0081F034 /* ShimmeringView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		4FECF67026096EAB0081F034 /* StackViews */ = {
+			isa = PBXGroup;
+			children = (
+				4FECF67126096EB10081F034 /* StackContainerView.swift */,
+			);
+			path = StackViews;
 			sourceTree = "<group>";
 		};
 		82D9047C26F8BBACCED9CBD5 /* Frameworks */ = {
@@ -766,7 +795,9 @@
 				4FECF47626089D430081F034 /* SetupCoordinating.swift in Sources */,
 				4FECF5042608AFAB0081F034 /* UIActivityIndicatorViewExtension.swift in Sources */,
 				4FECF4AC2608A4520081F034 /* TextFieldView.swift in Sources */,
+				4FECF66626096CFC0081F034 /* LoadingFailureView.swift in Sources */,
 				4FECF6002608D9A20081F034 /* LogoCellAdapter.swift in Sources */,
+				4FECF65726096C7F0081F034 /* ShimmeringViewPresentable.swift in Sources */,
 				4FECF5F22608D8F40081F034 /* LogoTableViewManager.swift in Sources */,
 				4FECF41826088B7A0081F034 /* AppDelegate.swift in Sources */,
 				4FECF4B82608A5AB0081F034 /* LabelFactory.swift in Sources */,
@@ -778,6 +809,8 @@
 				732EE00EBBACE27AD2EDEB10 /* MainPageViewProtocols.swift in Sources */,
 				4FECF5132608B05F0081F034 /* UIButtonExtension.swift in Sources */,
 				5BDFE7623D92390A42E3F050 /* MainPageViewController.swift in Sources */,
+				4FECF66B26096E290081F034 /* EmptyStateView.swift in Sources */,
+				4FECF67226096EB10081F034 /* StackContainerView.swift in Sources */,
 				4FECF4D72608A9F60081F034 /* UIFontExtension.swift in Sources */,
 				4FECF4DF2608AA750081F034 /* UILabelExtension.swift in Sources */,
 				4FECF6162608DA540081F034 /* LogoImageView.swift in Sources */,
@@ -793,6 +826,7 @@
 				4FECF5D82608D0C50081F034 /* Assets.swift in Sources */,
 				4FECF5F82608D92F0081F034 /* LogoTableViewCell.swift in Sources */,
 				4FECF5182608B0810081F034 /* PrimaryButton.swift in Sources */,
+				4FECF66126096CD80081F034 /* LoadingFailurePresentable.swift in Sources */,
 				4FECF6362608DB6F0081F034 /* UIImageViewExtension.swift in Sources */,
 				4FECF49826089FDB0081F034 /* ContainerExtension.swift in Sources */,
 				4FECF5272608B4C10081F034 /* NetworkDataProvider.swift in Sources */,
@@ -816,10 +850,12 @@
 				AA1DC34F87179172C0153DB6 /* MainPageRouterInput.swift in Sources */,
 				4FECF5392608B59A0081F034 /* NetworkLoggerPluginConfig.swift in Sources */,
 				4FECF4F42608AF4F0081F034 /* Button.swift in Sources */,
+				4FECF65C26096CB90081F034 /* TableStatusView.swift in Sources */,
 				4FECF62C2608DB180081F034 /* ReusableView.swift in Sources */,
 				4FECF5D02608D0C00081F034 /* EnvConfigs.swift in Sources */,
 				D8C6B59E5D14754B1EC331E0 /* MainPageRouter.swift in Sources */,
 				4FECF4C92608A86A0081F034 /* EditingAction.swift in Sources */,
+				4FECF67A26096EEB0081F034 /* ShimmeringView.swift in Sources */,
 				4FECF46F26089C410081F034 /* RootUIControllerType.swift in Sources */,
 				4FECF5892608C1F60081F034 /* SearchServiceProtocol.swift in Sources */,
 				2849F7F757D710E4BBD06107 /* MainPageAssembly.swift in Sources */,
