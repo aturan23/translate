@@ -9,6 +9,7 @@ import Moya
 
 enum SearchTarget {
     case search(text: String)
+    case meaning(id: Int)
 }
 
 extension SearchTarget: BaseTargetType {
@@ -17,6 +18,8 @@ extension SearchTarget: BaseTargetType {
         switch self {
         case .search:
             return "words/search"
+        case .meaning:
+            return "meanings"
         }
     }
     
@@ -25,6 +28,10 @@ extension SearchTarget: BaseTargetType {
         case .search(let text):
             return .requestParameters(
                 parameters: ["search": text],
+                encoding: URLEncoding.default)
+        case .meaning(let id):
+            return .requestParameters(
+                parameters: ["ids": id],
                 encoding: URLEncoding.default)
         }
     }
