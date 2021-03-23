@@ -11,9 +11,12 @@ protocol MainPageViewInput: class {
     func getFieldText() -> String
     func showInputError(message: String)
     func endEditing()
+    func showTableLoadingState()
+    func showTableFailureState()
 }
 
 protocol MainPageViewOutput {
     func didLoad()
     func didTapSearchButton()
+    func didTapRetryButton()
 }
